@@ -1,0 +1,68 @@
+<div *ngIf="!criptomoneda else divCriptomoneda" class="alert alert-info">
+    Espere por favor...
+</div>
+
+<ng-template #divCriptomoneda>
+    <div class="row">
+        <div class="col-12">
+            <h1>Criptomoneda: <small>{{criptomoneda.name}}</small></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+
+
+
+            <h3>Logo</h3>
+            <img [src]="criptomoneda.logo_url" class="img-thumbnail img-fluid" />
+        </div>
+        <div class=" col d-flex flex-column gap-2">
+            <h3>Información</h3>
+
+
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>ID: </strong>{{ criptomoneda.id}}
+
+                </li>
+
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Nombre: </strong>{{ criptomoneda.name}}
+
+                </li>
+
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Precio: </strong>{{ criptomoneda.price}}
+
+                </li>
+
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Rango: </strong>{{ criptomoneda.rank}}
+
+                </li>
+
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Estado: </strong>{{ criptomoneda.status}}
+
+                </li>
+
+            </ul>
+
+            
+
+
+
+        </div>
+            
+    </div>
+
+
+</ng-template>

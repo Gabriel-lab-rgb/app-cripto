@@ -1,0 +1,35 @@
+<div class="vh-100">
+<h2>Busquedas</h2>
+<hr>
+<ul class="list-group">
+<!-- Este primer RouterLink es igual a &quot;&quot; porque tal y como tenemos en el
+app-routing.module.ts,
+    al buscar por pais el path es &quot;&quot; y por eso es obligatorio usar el
+    [routerLinkActiveOptions]=&quot;{ exact: true }&quot; -->
+    <li routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="list-group-item">
+        Busqueda libre
+</li>
+   
+    <li routerLink="busqueda-rango"
+        routerLinkActive="active"
+        class="list-group-item">
+        Busqueda de rango
+    </li>
+   
+    
+    
+   
+</ul>
+<div class="mt-3 vh-100 gap-4 d-flex flex-column" >
+<h2>historial</h2>
+<div *ngFor="let criptomoneda of historial" >
+    <!-- (click)="buscar(termino)" -->
+    <span class="rounded-3 bg-success p-2 text-white">
+        {{criptomoneda}} 
+    </span>     
+</div>
+</div>
+</div>

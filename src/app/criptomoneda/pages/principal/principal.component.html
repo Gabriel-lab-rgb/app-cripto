@@ -1,0 +1,17 @@
+<app-criptomoneda-input (onEnter)="buscar( $event )"  placeholder="Busca una criptomoneda">
+</app-criptomoneda-input>
+
+
+
+<div *ngIf="hayError" class="alert alert-danger mt-3">
+    No se encontró ningun termino
+</div>
+<div *ngIf="criptomonedas.length > 0" class="row">
+    <div class="col">
+        
+
+
+        <app-criptomoneda-tabla [criptomonedas]="criptomonedas"></app-criptomoneda-tabla>
+
+    </div>
+</div>

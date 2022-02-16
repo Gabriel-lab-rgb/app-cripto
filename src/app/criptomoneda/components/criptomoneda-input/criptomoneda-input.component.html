@@ -1,0 +1,18 @@
+<div class="container-fluid animate__animated animate__fadeIn
+animate__faster">
+    <h2>Busqueda Libre</h2>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <form (ngSubmit)="buscar()" autocomplete="off" class="d-flex flex-row gap-4">
+                <input type="text"
+                name="termino"
+                class="form-control"
+                [(ngModel)]="termino"
+                (input)="teclaPresionada()"
+                [placeholder]="placeholder"/>
+                <button type="submit"  class="btn btn-success">Buscar</button>
+                </form>
+        </div>
+
+    </div>
