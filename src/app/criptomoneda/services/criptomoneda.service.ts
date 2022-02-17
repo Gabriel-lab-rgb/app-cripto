@@ -9,7 +9,7 @@ import { Criptomoneda } from '../interfaces/criptomoneda.interface';
 export class CriptomonedaService {
 
 
-  private apiUrl: string = 'Access-Control-Allow-Origin:https://api.nomics.com/v1/currencies/ticker?key=e7c6cb06fd3014abd445cbb51b104d75e440f63d';
+  privahttps://api.nomics.com/v1/currencies/ticker?key=e7c6cb06fd3014abd445cbb51b104d75e440f63d';
   public historial: string[] = [];
   get httpParams() {
     //indicamos los parámetros que queremos que nos devuelva la petición
